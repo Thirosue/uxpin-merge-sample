@@ -1,4 +1,5 @@
 import React from "react";
+import _ from 'lodash'
 
 type Map = {
   key: string
@@ -33,9 +34,9 @@ type Props = {
 };
 
 const Typography = ({ children, variant = 'body1', classes = [], }: Props) => {
-  const _classes = VariantSetting.filter((map: Map) => map.key === variant).map(
+  const _classes = _.head(VariantSetting.filter((map: Map) => map.key === variant).map(
     (map: Map) => map.class
-  )[0];
+  ));
   const className = [..._classes, ...classes].join(' ')
 
   return (
