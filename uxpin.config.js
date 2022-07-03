@@ -5,6 +5,7 @@ module.exports = {
                 name: 'General',
                 include: [
                     'components/atoms/general/Typography/Typography.tsx',
+                    'components/atoms/general/Button/Button.tsx',
                 ],
             },
             {
