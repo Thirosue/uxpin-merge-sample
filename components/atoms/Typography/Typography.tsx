@@ -19,7 +19,7 @@ const VariantSetting: Map[] = [
 ]
 
 type Props = {
-  children: React.ReactNode
+  children: string
   variant:
   | 'h2'
   | 'h3'
