@@ -42,6 +42,12 @@ Next.js has built-in TypeScript declarations, so we'll get autocompletion for Ne
 
 A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
 
+## Components push (sync UXPin merge)
+
+```
+$ npx uxpin-merge push --token SampleToken12345678901234567890123456789 --branch main
+```
+
 ## Issue
 
 ```
